@@ -5,7 +5,7 @@ Requirements:
 
 Installation
 ```sh
-$ composer install && php artisan jwt:secret && npm install @websanova/vue-auth && npm install --save vue-tree-list && npm install less-loader && npm install less && npm run dev && php artisan serve
+$ composer install && php artisan jwt:secret && npm install && npm install @websanova/vue-auth && npm install --save vue-tree-list && npm install less-loader && npm install less && npm run dev && php artisan serve
 
 $ mysql -u [username] -p [db_name] < database/dump/test_nextpage.sql
 ```
