@@ -9,6 +9,9 @@ $ composer install && cp .env.example .env && php artisan key:generate && php ar
 
 $ mysql -u [username] -p [db_name] < database/dumps/test_nextpage.sql
 ```
-Update DB_ section in .env
-For "php artisan serve" (change port here `resources/js/app.js:21` if 8000 will not be available).
-Dump of DB needs only for ~50000 employees, because generating the tree by seed will so slow... Almost with dump you will get user with `email: test@test.test` and `password: test`!
+
+Rules:
+1. Use only **localhost** to avoid CORS errors.
+2. Update DB_ section in .env
+3. For "php artisan serve" (change port here `resources/js/app.js:21` if 8000 will not be available).
+4. Dump of DB needs only for *~50000* employees, because generating the tree by seed will so slow... Also, with dump you will get user with `email: test@test.test` and `password: test`!
